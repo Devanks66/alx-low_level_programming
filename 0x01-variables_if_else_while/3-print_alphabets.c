@@ -7,22 +7,22 @@
 
 int main(void)
 {
-        char lower = 'a';
+
+	char lower = 'a';
 	char upper = 'A';
 
-	while (lower <= 'z') /*print lowercases a-z*/
+	while (lower <= 'z')
 	{
-       	        putchar(lower);
-		lower++;
+		putchar(lower);
+		putchar++;
 	}
-
-	while (upper <= 'Z') /*print uppercase A-Z*/
+	while (upper <= 'Z')
 	{
 		putchar(upper);
-	        upper++;
+		putchar++;
 	}
-
+	
 	putchar('\n');
 
-	return (0);
+	return (0);	
 }
