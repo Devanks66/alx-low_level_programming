@@ -17,6 +17,7 @@ bool is_num(char *argvv)
 		if (!(argvv[j] >= '0' && argvv[j] <= '9'))
 			return (0);
 	}
+
 	return (1);
 }
 
@@ -37,7 +38,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-
 	while (i < argc)
 	{
 		if (is_num(argv[i]))
