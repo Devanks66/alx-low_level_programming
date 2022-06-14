@@ -3,10 +3,11 @@
 #include "variadic_functions.h"
 
 /**
- * print_char - prints char
- * @valist: valist
+ * print_c - print a char
+ * @c: char to print
+ *
+ * Return: void
  */
-
 void print_c(va_list c)
 {
 	printf("%c", va_arg(c, int));
@@ -18,7 +19,6 @@ void print_c(va_list c)
  *
  * Return: void
  */
-
 void print_s(va_list s)
 {
 	char *str = va_arg(s, char *);
@@ -34,8 +34,18 @@ void print_s(va_list s)
  *
  * Return: void
  */
-
 void print_i(va_list i)
+{
+	printf("%d", va_arg(i, int));
+}
+
+/**
+ * print_f - prints a float
+ * @f: float to print
+ *
+ * Return: void
+ */
+void print_f(va_list f)
 {
 	printf("%f", va_arg(f, double));
 }
@@ -46,7 +56,6 @@ void print_i(va_list i)
  *
  * Return: void
  */
-
 void print_all(const char * const format, ...)
 {
 	unsigned int i, j;
